@@ -1,0 +1,86 @@
+{
+  "stages": {
+    "opening": {
+      "routes": {
+        "/feed?cursor=start": {
+          "contentType": "application/json",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-1",
+                "url": "/article/n-1",
+                "revision": 1,
+                "title": "线路开通",
+                "publishedAt": "2026-11-16T08:00:00Z",
+                "updatedAt": "2026-11-16T08:00:00Z",
+                "content": "首发：三条线路",
+                "section": "local"
+              }
+            ],
+            "next": "/feed?cursor=overlap"
+          },
+          "etag": "\"opening\""
+        },
+        "/feed?cursor=overlap": {
+          "contentType": "application/json",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-1",
+                "url": "/article/n-1",
+                "revision": 1,
+                "title": "线路开通",
+                "publishedAt": "2026-11-16T08:00:00Z",
+                "updatedAt": "2026-11-16T08:00:00Z",
+                "content": "首发：三条线路",
+                "section": "local"
+              }
+            ],
+            "next": null
+          }
+        }
+      }
+    },
+    "updated": {
+      "routes": {
+        "/feed?cursor=start": {
+          "contentType": "application/json",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-1",
+                "url": "/article/n-1",
+                "revision": 2,
+                "title": "线路开通：数据更新",
+                "publishedAt": "2026-11-16T08:00:00Z",
+                "updatedAt": "2026-11-16T09:00:00Z",
+                "content": "修订：四条线路",
+                "section": "local"
+              }
+            ],
+            "next": "/feed?cursor=overlap"
+          },
+          "etag": "\"updated\""
+        },
+        "/feed?cursor=overlap": {
+          "contentType": "application/json",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-1",
+                "url": "/article/n-1",
+                "revision": 2,
+                "title": "线路开通：数据更新",
+                "publishedAt": "2026-11-16T08:00:00Z",
+                "updatedAt": "2026-11-16T09:00:00Z",
+                "content": "修订：四条线路",
+                "section": "local"
+              }
+            ],
+            "next": null
+          }
+        }
+      }
+    }
+  }
+}

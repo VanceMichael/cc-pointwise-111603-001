@@ -1,20 +1,18 @@
 [
   {
-    "sourceId": "newsroom-revisions-demo-1",
-    "source": "sample-source",
-    "observedAt": "2026-11-16T09:00:00Z",
-    "label": "新闻稿件",
+    "sourceId": "n-1",
+    "source": "稿件采集台",
+    "observedAt": "2026-11-16T08:00:00Z",
+    "label": "线路开通",
     "attributes": {
-      "sample": true
-    }
-  },
-  {
-    "sourceId": "newsroom-revisions-demo-2",
-    "source": "sample-source",
-    "observedAt": "2026-11-16T09:05:00Z",
-    "label": "新闻稿件 2",
-    "attributes": {
-      "sample": true
+      "articleId": "n-1",
+      "url": "/article/n-1",
+      "revision": 1,
+      "title": "线路开通",
+      "publishedAt": "2026-11-16T08:00:00Z",
+      "updatedAt": "2026-11-16T08:00:00Z",
+      "content": "首发：三条线路",
+      "section": "local"
     }
   }
 ]
