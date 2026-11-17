@@ -1,0 +1,222 @@
+{
+  "stages": {
+    "opening": {
+      "routes": {
+        "/feed?cursor=start": {
+          "contentType": "application/json",
+          "etag": "\"opening-start\"",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-1",
+                "url": "/article/n-1",
+                "revision": 1,
+                "title": "线路开通",
+                "publishedAt": "2026-11-16T08:00:00Z",
+                "updatedAt": "2026-11-16T08:00:00Z",
+                "content": "首发：三条线路",
+                "section": "local"
+              },
+              {
+                "articleId": "n-2",
+                "url": "/article/n-2",
+                "revision": 1,
+                "title": "票价听证",
+                "publishedAt": "2026-11-16T08:30:00Z",
+                "updatedAt": "2026-11-16T08:30:00Z",
+                "content": "听证方案公示",
+                "section": "policy"
+              }
+            ],
+            "next": "/feed?cursor=overlap"
+          }
+        },
+        "/feed?cursor=overlap": {
+          "contentType": "application/json",
+          "etag": "\"opening-overlap\"",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-1",
+                "url": "/article/n-1",
+                "revision": 1,
+                "title": "线路开通",
+                "publishedAt": "2026-11-16T08:00:00Z",
+                "updatedAt": "2026-11-16T08:00:00Z",
+                "content": "首发：三条线路",
+                "section": "local"
+              },
+              {
+                "articleId": "n-3",
+                "url": "/article/n-3",
+                "revision": 1,
+                "title": "客流统计",
+                "publishedAt": "2026-11-16T09:00:00Z",
+                "updatedAt": "2026-11-16T09:00:00Z",
+                "content": "首日客流平稳",
+                "section": "local"
+              }
+            ],
+            "next": null
+          }
+        }
+      }
+    },
+    "revised": {
+      "routes": {
+        "/feed?cursor=start": {
+          "contentType": "application/json",
+          "etag": "\"revised-start\"",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-1",
+                "url": "/article/n-1",
+                "revision": 2,
+                "title": "线路开通：数据更新",
+                "publishedAt": "2026-11-16T08:00:00Z",
+                "updatedAt": "2026-11-16T10:00:00Z",
+                "content": "修订：四条线路",
+                "section": "local"
+              },
+              {
+                "articleId": "n-2",
+                "url": "/article/n-2",
+                "revision": 1,
+                "title": "票价听证",
+                "publishedAt": "2026-11-16T08:30:00Z",
+                "updatedAt": "2026-11-16T08:30:00Z",
+                "content": "听证方案公示",
+                "section": "policy"
+              }
+            ],
+            "next": "/feed?cursor=overlap"
+          }
+        },
+        "/feed?cursor=overlap": {
+          "contentType": "application/json",
+          "etag": "\"revised-overlap\"",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-1",
+                "url": "/article/n-1",
+                "revision": 2,
+                "title": "线路开通：数据更新",
+                "publishedAt": "2026-11-16T08:00:00Z",
+                "updatedAt": "2026-11-16T10:00:00Z",
+                "content": "修订：四条线路",
+                "section": "local"
+              },
+              {
+                "articleId": "n-3",
+                "url": "/article/n-3",
+                "revision": 2,
+                "title": "客流统计：晚高峰",
+                "publishedAt": "2026-11-16T09:00:00Z",
+                "updatedAt": "2026-11-16T10:30:00Z",
+                "content": "晚高峰客流增加",
+                "section": "local"
+              }
+            ],
+            "next": null
+          }
+        }
+      }
+    },
+    "lagging": {
+      "routes": {
+        "/feed?cursor=start": {
+          "contentType": "application/json",
+          "etag": "\"lagging-start\"",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-1",
+                "url": "/article/n-1",
+                "revision": 1,
+                "title": "线路开通",
+                "publishedAt": "2026-11-16T08:00:00Z",
+                "updatedAt": "2026-11-16T08:00:00Z",
+                "content": "首发：三条线路",
+                "section": "local"
+              }
+            ],
+            "next": "/feed?cursor=overlap"
+          }
+        },
+        "/feed?cursor=overlap": {
+          "contentType": "application/json",
+          "etag": "\"lagging-overlap\"",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-1",
+                "url": "/article/n-1",
+                "revision": 1,
+                "title": "线路开通",
+                "publishedAt": "2026-11-16T08:00:00Z",
+                "updatedAt": "2026-11-16T08:00:00Z",
+                "content": "首发：三条线路",
+                "section": "local"
+              }
+            ],
+            "next": null
+          }
+        }
+      }
+    },
+    "broken": {
+      "routes": {
+        "/feed?cursor=start": {
+          "contentType": "application/json",
+          "etag": "\"broken-start\"",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-1",
+                "url": "/article/n-1",
+                "revision": 3,
+                "title": "线路开通：三审",
+                "publishedAt": "2026-11-16T08:00:00Z",
+                "updatedAt": "2026-11-16T11:00:00Z",
+                "content": "",
+                "section": "local"
+              },
+              {
+                "articleId": "n-2",
+                "url": "/article/n-2",
+                "revision": 2,
+                "title": "票价听证：结果公布",
+                "publishedAt": "2026-11-16T08:30:00Z",
+                "updatedAt": "2026-11-16T11:30:00Z",
+                "content": "听证结果已采纳",
+                "section": "policy"
+              }
+            ],
+            "next": "/feed?cursor=overlap"
+          }
+        },
+        "/feed?cursor=overlap": {
+          "contentType": "application/json",
+          "etag": "\"broken-overlap\"",
+          "body": {
+            "items": [
+              {
+                "articleId": "n-3",
+                "url": "/article/n-3",
+                "revision": 3,
+                "title": "客流统计：收车",
+                "publishedAt": "2026-11-16T09:00:00Z",
+                "updatedAt": "2026-11-16T12:00:00Z",
+                "content": 12345,
+                "section": "local"
+              }
+            ],
+            "next": null
+          }
+        }
+      }
+    }
+  }
+}
